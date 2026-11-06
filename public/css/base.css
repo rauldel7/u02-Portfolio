@@ -1,13 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap");
 
 :root {
+     /*Text colors*/
     --color-text-primary: #1B2A33;
     --color-text-secondary: #5A6B65;
+
+    /*Font families*/
     --font-family-header: "Poppins", sans-serif;
     --font-family-body: "DM Sans", sans-serif;
+    
+    /*Website colors*/
     --color-background: #E6EFE2;
     --color-accent-primary: #2DBE7A;
     --color-accent-secondary: #E2506F;
+
+    /*Spacing*/
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
 }
 
 
