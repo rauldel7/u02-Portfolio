@@ -1,0 +1,36 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem var(--side-padding) 4rem;
+}
+ 
+.intro-text h1,
+.intro-text h2,
+.intro-text p {
+    font-size: var(--font-size-header);
+    font-weight: 700;
+    line-height: 1.15;
+}
+.name { 
+    width: fit-content; 
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+ 
+.intro-image {
+    width: clamp(13rem, 38vw, 21rem);
+    padding: 0.4rem;
+    border-radius: 50%;
+    background: var(--gradient-accent);
+
+    img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    }
+}

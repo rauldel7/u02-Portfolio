@@ -3,106 +3,48 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#E6EFE2">
     <title>Raul's portfolio</title>
+    <link rel="stylesheet" href="../css/base.css"/>
     <link rel="stylesheet" href="../css/about.css">
-    <link rel="stylesheet" href="../css/base.css">
-    <script type="module" src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
       <header class="header">
         
-        <a href="index.html" class="logo">
-          <figure class="logo-image"><img src="../assets/portrait.jpeg" alt="Smaller portrait"></figure>
+        <a href="/public/index.html" class="logo">
+          <img src="../assets/portrait.jpeg" alt="Smaller portrait" aria-label="Raul-home">
         </a>
       
       <!--menu button-->  
 
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-button">☰</label>
+      <button class="menu-button" type="button" aria-label="Toggle-menu" aria-expanded="false" aria-controls="site-nav">☰</button>
 
-      <nav class="nav" >
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="tech.html">Technologies</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contacts.html">Contact</a></li>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="/public/index.html">Home</a></li>
+          <li><a href="html/about.html">About</a></li>
+          <li><a href="html/tech.html">Technologies</a></li>
+          <li><a href="html/projects.html">Projects</a></li>
+          <li><a href="html/contacts.html">Contact</a></li>
         </ul>  
         <nav class="socials">
           <ul>
             <li>
-              <a href="https://x.com/?lang=sv"><img src="images/twitter.png" alt="Twitter-icon"></a></li>
-            <li>
               <a href="https://se.linkedin.com/"><img src="images/linkedin.png" alt="Linkedin-icon"></a></li>
             <li>
               <a href="https://github.com/"><img src="images/github.png" alt="Github-icon"></a></li>
+            <li>
+              <button class="dark-mode-toggle" aria-label="Toggle dark mode"></button></li>
           </ul>
         </nav>
       </nav>  
-
-    </header>      
-
-    <main>
-        <section class="about">
-            <h1>About Me</h1>
-            <p>The Generator App is an online tool that helps you to export ready-made templates ready to work
-                as your future website. It helps you to combine slides, panels and other components and export 
-                it as a set of static files: HTML/CSS/JS.</p>
-        </section>
-            <section class="work-experience">
-                <h1>Work Experience</h1>
-                <article class="job">
-                    <h2>Junior Web Developer</h2>
-                    <p class="company"><img src="images/building.png" alt="building-icon"> Dr. Rajkumar's Learning App</p>
-                    <p class="status">Full time</p>
-                    <p class="location"><img src="images/location-pin.png" alt="location-icon"> Bengaluru</p>
-                    <p class="dates"><img src="images/calendar.png" alt="calendar-icon"> Sep 2021 - Dec 2021</p>
-                </article>    
-                    <hr class="divider">
-                <article class="job">
-                    <h2>Web Development Intern</h2>
-                    <p class="company"><img src="images/building.png" alt="building-icon"> Ionpixelz Web Solutions</p>
-                    <p class="status">Internship</p>
-                    <p class="location"><img src="images/location-pin.png" alt="location-icon"> Bengaluru</p>
-                    <p class="dates"><img src="images/calendar.png" alt="calendar-icon"> Sep 2021 - Dec 2021</p>
-                </article>
-                    <hr class="divider">
-                 <article class="job">
-                    <h2>SEO / SEM Specialist</h2>
-                    <p class="company"><img src="images/building.png" alt="building-icon"> HAAPS</p>
-                    <p class="status">Internship</p>
-                    <p class="location"><img src="images/location-pin.png" alt="location-icon"> Bengaluru</p>
-                    <p class="dates"><img src="images/calendar.png" alt="calendar-icon"> Sep 2021 - Dec 2021</p>
-                </article>
-                    <hr class="divider">   
-            </section>     
-        <section class="education"> 
-            <h1>Education</h1>
-                <article class="program">
-                    <h2>Frontend Development</h2>
-                    <p class="school"><img src="images/building.png" alt="building-icon"> Udemy, Youtube, Google, Medium</p>
-                    <p class="status">Full time</p>
-                    <p class="location"><img src="images/location-pin.png" alt="location-icon"> Online</p>
-                    <p class="dates"><img src="images/calendar.png" alt="calendar-icon"> Jan 2022 - Present</p>
-                </article>
-                    <hr class="divider">
-                <article class="program">
-                    <h2>Bachelors in Electronics & Communication</h2>
-                    <p class="school"><img src="images/building.png" alt="building-icon"> Bangalore institute of Technology</p>
-                    <p class="status">Full time</p>
-                    <p class="location"><img src="images/location-pin.png" alt="location-icon"> Bengaluru</p>
-                    <p class="dates"><img src="images/calendar.png" alt="calendar-icon"> Aug 2020 - Dec 2020</p>
-                </article>
-                    <hr class="divider">
-        </section>        
-    </main>
+    </header>    
 
     <!--Footer-->  
 
-    <footer>
-      <p class="footer-text">Designed and Coded by Raul Del Pozo with <i>Love</i> & <i>Coffee</i></p>
-    </footer>
-    
+     <footer>
+      <p class="footer-text">Designed and Coded by Raul Del Pozo with <i>Love</i> &amp; <i>Food</i></p>
+     </footer>
     </body>
-
   </html>
