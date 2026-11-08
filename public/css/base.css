@@ -20,7 +20,7 @@
     --font-size-layout: clamp(0.5rem, 1vw, 0.75rem);
 
     /*Layout*/
-    --side-padding: clamp(1.25rem, 11vw, 2.5rem);
+    --side-padding: clamp(1.25rem, 12vw, 2.5rem);
     
 }
 
@@ -135,10 +135,16 @@ body {
     margin: 0.75rem 0 0.5rem;
     
     img {
-    display: block;
-    width: 2.25rem;
-    height: 2.25rem;
-    transition: transform 0.2s;
+        display: block;
+        width: 2.25rem;
+        height: 2.25rem;
+        transition: transform 0.2s;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
     }
 }
 
@@ -176,6 +182,7 @@ footer {
 
     .nav,
     .nav.is-open {
+        position: static;
         display: flex;
         align-items: center;
         gap: 2.5rem;

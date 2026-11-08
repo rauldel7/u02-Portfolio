@@ -1,0 +1,1 @@
+const data_URL = "../data/about.json";

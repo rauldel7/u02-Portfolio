@@ -1,0 +1,70 @@
+{
+    "about": {
+        "title": "About Me",
+        "text": "I am a developer who likes creating modern web applications. I have a passion for learning new technologies and improving my skills. I enjoy working on projects that challenge me and allow me to grow as a developer. I tend to work with my hands but I also enjoy working with computers and technology."
+    },
+
+    "workExperience": {
+        "title": "Work Experience",
+        "items": [
+            {
+                "title": "Warehouse Worker",
+                "organization": "Purolett Fabriken AB",
+                "type": "Part-time",
+                "location": "Hålludsvägen 26, 134 45 Ingarö",
+                "start": "Jun 2023",
+                "end": "Present" 
+            },
+            {
+                "title": "Runner",
+                "organization": "Foodora Market",
+                "type": "Full-time",
+                "location": "Högbergsgatan 48, 118 26 Stockholm",
+                "start": "Feb 2025",
+                "end": "Sep 2025" 
+            },
+            {
+                "title": "Team-Leader",
+                "organization": "Five-moments",
+                "type": "Part-time",
+                "location": "Råsta Strandväg 1, 169 79 Solna",
+                "start": "Oct 2021",
+                "end": "Aug 2024" 
+            }
+        ]
+    },
+
+    "education": {
+        "title": "Education",
+        "items": [
+            { 
+                "title": "Full Stack Development with Javascript",
+                "organization": "Chas Academy",
+                "type": "Full time",
+                "location": "Arenavägen 61, 121 77 Johanneshov",
+                "start": "Sep 2026",
+                "end": "Present"
+            },
+
+            
+
+            {
+                "title": "English and Spanish Teaching Course",
+                "organization": "Stockholm University",
+                "type": "Full time",
+                "location": "Frescativägen 54, 106 91 Stockholm",
+                "start": "Sep 2024",
+                "end": "Mar 2025"
+            },
+
+            {
+                "title": "Economy - Marketing",
+                "organization": "Thorildsplans Gymnasium",
+                "type": "Full time",
+                "location": "Drottningholmsvägen 82, 112 43 Stockholm",
+                "start": "Aug 2020",
+                "end": "Jun 2024"
+            }
+        ]
+    }
+}

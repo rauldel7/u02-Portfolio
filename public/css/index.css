@@ -34,3 +34,17 @@
     border-radius: 50%;
     }
 }
+
+@media (min-width: 64rem) {
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        padding: 6rem 7rem;
+    }
+
+    .intro-image {
+        width: clamp(13rem, 32vw, 28rem);
+    }
+
+} 
