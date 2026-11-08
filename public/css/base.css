@@ -14,14 +14,26 @@
     --font-family-body: "DM Sans", sans-serif;
 
     /*Font sizes*/
-    --font-size-header: clamp(2rem, 6.6vw, 4rem);
-    --font-size-secondary-header: clamp(1.5rem, 4.5vw, 2.5rem);
+    --font-size-intro: clamp(2rem, 6.6vw, 4rem);
+    --font-size-header: clamp(1.75rem, 5vw, 3rem);
+    --font-size-secondary-header: clamp(1.5rem, 4.5vw, 2.2rem);
     --font-size-body:clamp(1rem, 2.5vw, 1.25rem);
     --font-size-layout: clamp(0.5rem, 1vw, 0.75rem);
 
+    /*Font weights*/
+    --font-weight-header: 700;
+    --font-weight-secondary-header: 600;
+    --font-weight-body: 500;
+
+    /*line-height*/
+    --standard: 1.15;
+
     /*Layout*/
     --side-padding: clamp(1.25rem, 12vw, 2.5rem);
-    
+
+    /*Status pill*/
+    --pill-background-color: rgb(45 190 122 / 0.16);
+    --pill-text-color: #17714A;
 }
 
 /*Reset alla grundinställningar för alla element*/
@@ -46,7 +58,7 @@ html { background: var(--color-background); }
 /*Menu for every page*/
 body {
     max-width: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
     margin-inline: auto;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -64,17 +76,20 @@ body {
     justify-content: space-between;
     gap: 1rem 1.5rem;
     padding: 1.25rem var(--side-padding) 0;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    background-color: var(--color-background);
+    padding: 1.5rem var(--side-padding);
 }
 
 .logo {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
-    width: var(--font-size-header);  
-    height: var(--font-size-header);
-    padding: 0.2rem;
-    
+    width: var(--font-size-intro);  
+    height: var(--font-size-intro);
+    padding: clamp(0.05rem, 1vw, 0.2rem);
     border-radius: 50%;
     background: var(--gradient-accent);
 
@@ -92,7 +107,7 @@ body {
     background: none;
     border: 0;
     font: inherit;
-    font-size: var(--font-size-body);
+    font-size: var(--font-size-secondary-header);
     line-height: 1;
     color: var(--color-text-primary);
     cursor: pointer;
@@ -121,8 +136,8 @@ body {
 .nav-links a {
     display: block;
     padding: 1rem 0;
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weght-secondary-header);
     transition: color 0.2s;
 }
 

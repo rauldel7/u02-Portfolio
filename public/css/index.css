@@ -9,8 +9,8 @@
 .intro-text h2,
 .intro-text p {
     font-size: var(--font-size-header);
-    font-weight: 700;
-    line-height: 1.15;
+    font-weight: var(--font-weight-header);
+    line-height: var(--lh-standard);
 }
 .name { 
     width: fit-content; 

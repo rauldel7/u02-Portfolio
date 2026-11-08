@@ -1,0 +1,100 @@
+main {
+    width: 100%;
+    max-width: 64rem;
+    padding: var(--side-padding);
+}
+
+main h1 {
+    font-size: var(--font-size-header);
+    font-weight: var(--font-weight-header);
+    line-height: var(--lh-standard);
+}
+
+.about,
+.job,
+.program {
+    margin-bottom: 3rem;
+}
+
+.about p {
+    font-size: var(--font-size-body);
+    color: var(--color-text-secondary);
+}
+
+.job, 
+.program {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "title"
+        "status"
+        "place"
+        "location"
+        "dates";
+    row-gap: 0.4rem;
+    padding-block: 1.5rem;
+}
+
+.job h2, 
+.program h2 {
+    grid-area: title;
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-body);
+    line-height: var(--lh-standard);
+}
+
+.company,
+.school,
+.location,
+.dates {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+
+.company,
+.school   { grid-area: place; }
+.location { grid-area: location; }
+.dates    { grid-area: dates; }
+.status   { grid-area: status; }
+
+.company img,
+.school img,
+.location img,
+.dates img {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+}
+
+.status {
+    justify-self: start;
+    padding: 0.3rem 0.9rem;
+    margin-block: 0.25rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    background: var(--pill-background-color);
+    color: var(--pill-text-color);
+}
+
+@media (min-width: 64rem) {
+    .job,
+    .program {
+        grid-template-columns: 1fr auto;
+        grid-template-areas: 
+            "title     status"
+            "place     dates"
+            "location .";
+    }
+
+    .status { 
+        justify-self: end; 
+        margin-block: 0; }
+
+    .dates  { 
+        justify-self: end; 
+    }
+
+}   
