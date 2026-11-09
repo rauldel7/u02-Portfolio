@@ -60,7 +60,7 @@ html { background: var(--color-background); }
 /*Menu for every page*/
 body {
     max-width: 100%;
-    max-height: 100vh;
+    min-height: 100dvh;
     margin-inline: auto;
     display: grid;
     grid-template-rows: auto 1fr auto;
