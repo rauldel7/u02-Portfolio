@@ -2,7 +2,6 @@ main {
     width: 100%;
     max-width: 64rem;
     padding: var(--side-padding);
-    margin:2.5rem;
 }
 
 main h1 {
