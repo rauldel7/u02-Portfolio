@@ -94,3 +94,19 @@ main h1 {
     }
 
 }   
+
+@media (prefers-color-scheme: dark) {
+    .about p,
+    .job p,
+    .program p {
+        color: var(--color-text-secondary-dark);
+    }
+
+    .company img,
+    .school img,
+    .location img,
+    .dates img {
+        filter: brightness(0) invert(1);
+    }
+
+}

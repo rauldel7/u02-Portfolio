@@ -22,12 +22,27 @@ main h1 {
 
 .tech-icon {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5rem;
-}
-
-img {
-    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7.5rem;
+    width: 90%;
     height: auto;
     object-fit: contain;
+}
+
+@media (min-width: 64rem) {
+    .tech-icon {
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .tech-stack p {
+        color: var(--color-text-secondary-dark);
+    }
+
+    .tech-icon-inv {
+        filter: brightness(0) invert(1);
+    }
 }

@@ -146,3 +146,17 @@ main h1 {
     cursor: pointer;
 }
 .retry-button:hover { background: var(--color-accent-secondary); }
+
+@media (prefers-color-scheme: dark) {
+    .page-subtitle {
+        color: var(--color-text-secondary-dark)
+    }
+
+    .project-card {
+        background: var(--color-surface-dark);
+    }
+
+    .project-description {
+        color: var(--color-text-secondary-dark)
+    }
+}

@@ -36,6 +36,12 @@
     /*Status pill*/
     --pill-background-color: rgb(45 190 122 / 0.16);
     --pill-text-color: #17714A;
+
+    /*Dark mode*/
+    --color-text-primary-dark: #E6EFE2;
+    --color-text-secondary-dark: #A3B5A9;
+    --color-background-dark: #0f1c15;
+    --color-surface-dark: #2a4a3d;
 }
 
 /*Reset alla grundinställningar för alla element*/
@@ -216,7 +222,7 @@ footer {
     .nav-links a {
         padding: 0;
         font-size: var(--font-size-body);
-        font-weight: 500;
+        font-weight: var(--font-weight-body);
         color: var(--color-text-secondary);
     }
 
@@ -229,4 +235,32 @@ footer {
     main {
         margin: 2.5rem;;
     }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color:var(--color-text-primary-dark);
+        background: var(--color-background-dark);
+    }
+
+    .header {
+        background-color: var(--color-background-dark);
+    }
+
+    .menu-button {
+        color: var(--color-text-primary-dark);
+    }
+
+    .nav {
+        background: var(--color-background-dark);
+    }
+
+    .nav a {
+        color: var(--color-text-primary-dark);
+    }
+
+    .socials img {
+        filter: brightness(0) invert(1);
+    }
+
 }

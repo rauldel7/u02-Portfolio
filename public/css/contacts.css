@@ -30,5 +30,10 @@
     color: var(--color-text-primary);
 }
 
-
+@media (prefers-color-scheme: dark) { 
+    .contact-text h1,
+    .contacts p {
+        color: var(--color-text-primary-dark)
+    }
+}
 
