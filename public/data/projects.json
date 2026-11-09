@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "title": "Portfolio design",
+      "description": "My first visual only version of my portfolio used to learn HTML and CSS",
+      "image": "../assets/design-preview.png",
+      "alt": "Screenshot of the design home page",
+      "repo": "u01-designskiss",
+      "techStack": ["HTML", "CSS"],
+      "liveUrl": "https://rauldel7.github.io/u01-designskiss/",
+      "codeUrl": "https://github.com/rauldel7/u01-designskiss"
+    },
+    {
+      "title": "Fyll burken",
+      "description": "Quiz app made with my friends where you fill a jar as you answer the questions right.",
+      "image": "../assets/quiz-preview.png",
+      "alt": "Home page of my quiz app",
+      "repo": "brain-climb",
+      "techStack": ["HTML", "CSS", "JavaScript"],
+      "liveUrl": "https://codebyjk.github.io/brain-climb/public/",
+      "codeUrl": "https://github.com/CodeByJK/brain-climb"
+    },
+    {
+      "title": "Portfolio page",
+      "description": "An updated more streamlined version of my portfolio made with HTML, CSS and JavaScript.",
+      "image": "../assets/portfolio-preview.png",
+      "alt": "Screenshot of the portfolio home page",
+      "repo": "u02-portfolio",
+      "techStack": ["HTML", "CSS", "JavaScript"],
+      "liveUrl": "https://rauldel7.github.io/u02-portfolio/",
+      "codeUrl": "https://github.com/rauldel7/u02-Portfolio.git"
+    },
+    {
+      "title": "Sole",
+      "description": "A simple web page to sell shoes made with Bolt AI, doesn't actually sell anything",
+      "image": "../assets/sole-preview.png",
+      "alt": "Home page of my shoe shop",
+      "repo": "sole",
+      "techStack": ["HTML", "CSS", "Typescript"],
+      "liveUrl": "https://sole-brown.vercel.app/",
+      "codeUrl": "https://github.com/rauldel7/sole.git"
+    }  
+  ]
+}

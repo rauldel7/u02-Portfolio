@@ -1,3 +1,5 @@
+import { element } from "./tools.js";
+
 const data_url = "../data/about.json";
 
 const icons = {
@@ -5,13 +7,6 @@ const icons = {
   location: "../assets/location-pin.png",
   dates: "../assets/calendar.png",
 };
-
-function element(tag, className, text) {
-  const node = document.createElement(tag);
-  if (className) node.className = className;
-  if (text !== undefined) node.textContent = text;
-  return node;
-}
 
 function info(className, iconKey, text) {
   const p = element("p", className);
@@ -60,7 +55,7 @@ function render(data) {
   );
 }
 
-async function init() {
+export async function initAboutPage() {
   try {
     const response = await fetch(data_url);
     if (!response.ok) {
@@ -74,5 +69,3 @@ async function init() {
       .replaceChildren(element("p", "error", "Sorry, this content could not be loaded."));
   }
 }
-
-init();

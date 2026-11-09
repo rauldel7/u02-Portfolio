@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-     /*Text colors*/
+     /*Colors*/
     --color-text-primary: #1B2A33;
     --color-text-secondary: #5A6B65;
     --color-background: #E6EFE2;
+    --color-surface: #F4F8EF;
     --color-accent-primary: #2DBE7A;
     --color-accent-secondary: #E2506F;
     --gradient-accent: linear-gradient(120deg, var(--color-accent-primary), var(--color-accent-secondary));
@@ -26,7 +27,8 @@
     --font-weight-body: 500;
 
     /*line-height*/
-    --standard: 1.15;
+    --lh-standard: 1.15;
+    --lh-large: 1.5;
 
     /*Layout*/
     --side-padding: clamp(1.25rem, 12vw, 2.5rem);
@@ -181,6 +183,7 @@ footer {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    padding-right: 0.15em;
 }
 
 /*Laptop view - 1024px*/

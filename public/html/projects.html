@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="../css/base.css"/>
     <link rel="stylesheet" href="../css/projects.css">
     <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/projects.js"></script>
   </head>
-  <body>
+  <body data-page="projects">
       <header class="header">
         
         <a href="/public/index.html" class="logo">
@@ -40,6 +41,21 @@
         </nav>
       </nav>  
     </header>    
+
+    <main>
+      <h1>Projects</h1>
+      <p class="page-subtitle">Things I've built so far</p>
+ 
+      <section class="projects-section" id="featured" aria-labelledby="featured-title">
+        <h2 id="featured-title" class="visually-hidden">Featured projects</h2>
+        <div class="project-grid" id="featured-list"></div>
+      </section>
+ 
+      <section class="projects-section" id="github" aria-labelledby="github-title">
+        <h2 id="github-title" class="visually-hidden">Public repositories on GitHub</h2>
+        <div class="project-grid" id="github-list"></div>
+      </section>
+    </main>
 
     <!--Footer-->  
 
