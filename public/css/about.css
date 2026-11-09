@@ -2,6 +2,7 @@ main {
     width: 100%;
     max-width: 64rem;
     padding: var(--side-padding);
+    margin:2.5rem;
 }
 
 main h1 {
@@ -13,10 +14,11 @@ main h1 {
 .about,
 .job,
 .program {
-    margin-bottom: 3rem;
+    margin: 1rem 0 3.5rem;
 }
 
 .about p {
+    margin: 1rem 0 3.5rem;
     font-size: var(--font-size-body);
     color: var(--color-text-secondary);
 }
